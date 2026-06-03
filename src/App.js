@@ -4,7 +4,6 @@ import * as XLSX from "xlsx";
 // ─── SUPABASE CONFIG ───────────────────────────────────────────────────────
 const SUPABASE_URL = "https://lrfbupelsjvphbmokfxd.supabase.co";
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxyZmJ1cGVsc2p2cGhibW9rZnhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAxMzA2OTgsImV4cCI6MjA5NTcwNjY5OH0.WnkFWFioGGaz33T3pRiuz0eGI62k9Omdo_uKNVZiJWU";
-const USE_SUPABASE = true;
 
 async function sbFetch(path, options = {}) {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
